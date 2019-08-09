@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-ZA-2Iw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qp-kz-v1G">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="SAq-5i-4Xf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="65"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nue-gI-fAA">
+                                        <rect key="frame" x="0.0" y="230" width="414" height="588"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-mt-kBd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isN-Ww-71P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="60"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rmn-dy-bT0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5p-w3-ZSc">
+                                                        <rect key="frame" x="104" y="0.0" width="102" height="60"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJw-fe-CrU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCe-gi-JhJ">
+                                                        <rect key="frame" x="208" y="0.0" width="102" height="60"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="x">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGo-nW-E71"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2f-s4-hJc">
+                                                        <rect key="frame" x="312" y="0.0" width="102" height="60"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="/">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV2-3M-qtw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="m5p-w3-ZSc" firstAttribute="top" secondItem="cy4-mt-kBd" secondAttribute="top" id="0lL-4R-lab"/>
+                                                    <constraint firstItem="isN-Ww-71P" firstAttribute="top" secondItem="cy4-mt-kBd" secondAttribute="top" id="4qY-Qm-S8Z"/>
+                                                    <constraint firstAttribute="bottom" secondItem="isN-Ww-71P" secondAttribute="bottom" id="9dZ-aE-FEH"/>
+                                                    <constraint firstItem="q2f-s4-hJc" firstAttribute="top" secondItem="cy4-mt-kBd" secondAttribute="top" id="WyM-x4-3Ov"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RCe-gi-JhJ" secondAttribute="bottom" id="bA5-yY-i6J"/>
+                                                    <constraint firstItem="RCe-gi-JhJ" firstAttribute="top" secondItem="cy4-mt-kBd" secondAttribute="top" id="enc-Be-DcX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="m5p-w3-ZSc" secondAttribute="bottom" id="g2b-Qp-hu4"/>
+                                                    <constraint firstAttribute="height" constant="60" id="gQX-yJ-aRV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="q2f-s4-hJc" secondAttribute="bottom" id="w5y-f3-cQI"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PsG-VC-NIb">
+                                                <rect key="frame" x="0.0" y="62" width="414" height="117"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-fp-hu8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5b-f6-qrY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJu-52-qOq">
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZD-CV-qQe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDH-So-Ujr">
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaj-Xf-pxD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="G1g-fp-hu8" secondAttribute="bottom" id="5Ze-Hr-FQ1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GDH-So-Ujr" secondAttribute="bottom" id="YKI-3e-AgV"/>
+                                                    <constraint firstItem="ZJu-52-qOq" firstAttribute="top" secondItem="PsG-VC-NIb" secondAttribute="top" id="b8S-FU-wzA"/>
+                                                    <constraint firstItem="G1g-fp-hu8" firstAttribute="top" secondItem="PsG-VC-NIb" secondAttribute="top" id="ge3-w9-po0"/>
+                                                    <constraint firstItem="GDH-So-Ujr" firstAttribute="top" secondItem="PsG-VC-NIb" secondAttribute="top" id="if1-xZ-FYt"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZJu-52-qOq" secondAttribute="bottom" id="im7-87-YK9"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-H2-h6z">
+                                                <rect key="frame" x="0.0" y="181" width="414" height="117"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cZ-uL-p3T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIH-T4-CKJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-PA-aEy">
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hM6-6K-EJN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-SO-dpf">
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="117"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6c-ow-SA4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="BMY-SO-dpf" firstAttribute="top" secondItem="ZnS-H2-h6z" secondAttribute="top" id="TgK-MG-XSf"/>
+                                                    <constraint firstItem="6cZ-uL-p3T" firstAttribute="top" secondItem="ZnS-H2-h6z" secondAttribute="top" id="Uls-3z-lUl"/>
+                                                    <constraint firstItem="9AC-PA-aEy" firstAttribute="top" secondItem="ZnS-H2-h6z" secondAttribute="top" id="cMe-3X-bcm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6cZ-uL-p3T" secondAttribute="bottom" id="sQQ-4J-HGO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="BMY-SO-dpf" secondAttribute="bottom" id="tfa-64-Er9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9AC-PA-aEy" secondAttribute="bottom" id="yzM-2W-Zki"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="quO-xT-qbC">
+                                                <rect key="frame" x="0.0" y="300" width="414" height="116.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-jj-aMp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="116.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8JZ-Cy-czd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-BT-qBg">
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="116.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTD-mn-LLG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-wi-Z8x">
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="116.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyo-So-gtm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vz1-jj-aMp" firstAttribute="top" secondItem="quO-xT-qbC" secondAttribute="top" id="4hy-jF-niS"/>
+                                                    <constraint firstItem="MMK-BT-qBg" firstAttribute="top" secondItem="quO-xT-qbC" secondAttribute="top" id="ECd-q2-4TV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MMK-BT-qBg" secondAttribute="bottom" id="Fpp-sY-ahs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vz1-jj-aMp" secondAttribute="bottom" id="QsW-8t-eS8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sGL-wi-Z8x" secondAttribute="bottom" id="cyi-1c-xxm"/>
+                                                    <constraint firstItem="sGL-wi-Z8x" firstAttribute="top" secondItem="quO-xT-qbC" secondAttribute="top" id="l8T-lv-AZg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-OR-Yjd">
+                                                <rect key="frame" x="0.0" y="418.5" width="414" height="169.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-sx-iyI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="169.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="35"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJ6-ry-0sH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHF-Dc-U2y">
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="169.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsK-dx-vu9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-YK-MKM">
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="169.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fZ-D8-8Y3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="fEb-YK-MKM" secondAttribute="bottom" id="7ps-PQ-j8z"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tHF-Dc-U2y" secondAttribute="bottom" id="7up-kt-Xuq"/>
+                                                    <constraint firstItem="fEb-YK-MKM" firstAttribute="top" secondItem="2oz-OR-Yjd" secondAttribute="top" id="FKB-8m-8EM"/>
+                                                    <constraint firstItem="tEc-sx-iyI" firstAttribute="top" secondItem="2oz-OR-Yjd" secondAttribute="top" id="Lk2-hD-ifn"/>
+                                                    <constraint firstItem="tHF-Dc-U2y" firstAttribute="top" secondItem="2oz-OR-Yjd" secondAttribute="top" id="isq-Zw-afa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tEc-sx-iyI" secondAttribute="bottom" id="qgg-1l-vR4"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2oz-OR-Yjd" firstAttribute="leading" secondItem="Nue-gI-fAA" secondAttribute="leading" id="4yY-Gg-X4C"/>
+                                            <constraint firstAttribute="trailing" secondItem="quO-xT-qbC" secondAttribute="trailing" id="8Pj-gK-sVx"/>
+                                            <constraint firstAttribute="trailing" secondItem="2oz-OR-Yjd" secondAttribute="trailing" id="EJQ-Z4-1du"/>
+                                            <constraint firstItem="ZnS-H2-h6z" firstAttribute="leading" secondItem="Nue-gI-fAA" secondAttribute="leading" id="F2i-1x-NVl"/>
+                                            <constraint firstItem="PsG-VC-NIb" firstAttribute="leading" secondItem="Nue-gI-fAA" secondAttribute="leading" id="PNE-SM-Mhg"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZnS-H2-h6z" secondAttribute="trailing" id="RPN-7l-egU"/>
+                                            <constraint firstItem="cy4-mt-kBd" firstAttribute="leading" secondItem="Nue-gI-fAA" secondAttribute="leading" id="XO6-5I-72Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="cy4-mt-kBd" secondAttribute="trailing" id="ndj-0H-lIa"/>
+                                            <constraint firstAttribute="trailing" secondItem="PsG-VC-NIb" secondAttribute="trailing" id="pq6-ib-VHq"/>
+                                            <constraint firstItem="quO-xT-qbC" firstAttribute="leading" secondItem="Nue-gI-fAA" secondAttribute="leading" id="r91-r3-xOK"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nue-gI-fAA" firstAttribute="leading" secondItem="Htd-ZA-2Iw" secondAttribute="leading" id="WMO-GD-fBy"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Qp-kz-v1G" secondAttribute="trailing" id="ZGP-gd-T8u"/>
+                                    <constraint firstItem="0Qp-kz-v1G" firstAttribute="leading" secondItem="Htd-ZA-2Iw" secondAttribute="leading" id="eTN-cO-dOo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nue-gI-fAA" secondAttribute="trailing" id="kfe-Go-BFV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Htd-ZA-2Iw" secondAttribute="trailing" id="I8b-0j-1C5"/>
+                            <constraint firstItem="Htd-ZA-2Iw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JeP-PS-AYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Htd-ZA-2Iw" secondAttribute="bottom" id="diq-h6-R3a"/>
+                            <constraint firstItem="Htd-ZA-2Iw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fNw-TA-0cO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDivide" destination="q2f-s4-hJc" id="csq-h3-mNZ"/>
+                        <outlet property="btnEight" destination="MMK-BT-qBg" id="s9q-Cn-fZi"/>
+                        <outlet property="btnFive" destination="9AC-PA-aEy" id="cr2-EL-s6D"/>
+                        <outlet property="btnFour" destination="6cZ-uL-p3T" id="l9V-W0-2Ow"/>
+                        <outlet property="btnMinus" destination="m5p-w3-ZSc" id="esA-p0-KKm"/>
+                        <outlet property="btnMultiply" destination="RCe-gi-JhJ" id="lcu-U8-91W"/>
+                        <outlet property="btnNine" destination="sGL-wi-Z8x" id="nDq-ze-bmP"/>
+                        <outlet property="btnOne" destination="G1g-fp-hu8" id="j0v-BH-C7m"/>
+                        <outlet property="btnPlus" destination="isN-Ww-71P" id="ySi-FD-knB"/>
+                        <outlet property="btnSeven" destination="vz1-jj-aMp" id="BZJ-M8-a2v"/>
+                        <outlet property="btnSix" destination="BMY-SO-dpf" id="LPa-wA-e5H"/>
+                        <outlet property="btnThree" destination="GDH-So-Ujr" id="cWb-nv-wOt"/>
+                        <outlet property="btnTwo" destination="ZJu-52-qOq" id="vN1-Bf-YcP"/>
+                        <outlet property="btnZero" destination="tHF-Dc-U2y" id="T5o-xu-gg4"/>
+                        <outlet property="labelresult" destination="0Qp-kz-v1G" id="mtl-9e-lEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
