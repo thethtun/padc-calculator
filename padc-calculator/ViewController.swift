@@ -28,7 +28,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func onClickOne(_ sender : Any) {
@@ -115,29 +114,33 @@ class ViewController: UIViewController {
     
     func calculate(key : Character, queryToCalculate : String) {
         let numbers = queryToCalculate.split(separator: key)
-        let num1 = Int(String(numbers[0])) ?? 0
-        var num2 = 0
-        if numbers.count > 1 {
-            num2 = Int(String(numbers[1])) ?? 0
+        var num1 : Int = 0
+        var num2 : Int = 0
+        let numOneStr = String(numbers[0]) // convert to SubString to String
+        let numOneInt = Int(numOneStr) // convert from String to Integer
+        
+        //TODO : unwrap this optional using if let
+        if numOneInt != nil {
+            num1 = numOneInt!
         }
         
-        switch key {
-        case "+":
-            labelresult.text = "\(String(num1 + num2))"
-            break
-        case "-":
-            labelresult.text = "\(String(num1 - num2))"
-            break
-        case "*":
-            labelresult.text = "\(String(num1 * num2))"
-            break
-        case "/":
-            labelresult.text = "\(String(num1 / num2))"
-            break
-        default:
-            labelresult.text = "0"
+        if numbers.count > 1 {
+            //TODO : Format & assign num2 value
         }
+        
+        /*
+         TODO : Use Switch to implement the following logic.
+         
+        key
+         + -> set label to the combination result of num1 & num2
+         - -> set label to the substruction result of num1 & num2
+         * -> set label to the multiplication result of num1 & num2
+         / -> set label to the division result of num1 & num2
+         default -> set label to "0"
+        */
+        
     }
+    
     
     func addNumberString(value : String) {
         if labelresult.text == "0" {
@@ -148,4 +151,17 @@ class ViewController: UIViewController {
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
