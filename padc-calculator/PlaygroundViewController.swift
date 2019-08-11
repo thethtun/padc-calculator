@@ -7,16 +7,24 @@
 //
 
 import UIKit
+class Cat {
+    var name : String = "Bo Bo"
+    deinit {
+        print("Bo Bo object has been destroyed.")
+    }
+}
+
+
 
 class PlaygroundViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        runPlayGround()
-        
+        play2()
+    
     }
     
 

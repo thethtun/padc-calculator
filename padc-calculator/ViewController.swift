@@ -119,25 +119,31 @@ class ViewController: UIViewController {
         let numOneStr = String(numbers[0]) // convert to SubString to String
         let numOneInt = Int(numOneStr) // convert from String to Integer
         
-        //TODO : unwrap this optional using if let
-        if numOneInt != nil {
-            num1 = numOneInt!
+        if let unwrappedNumOne = numOneInt {
+            num1 = unwrappedNumOne
         }
         
         if numbers.count > 1 {
             //TODO : Format & assign num2 value
+            let numTwoStr = String(numbers[1]) // convert to SubString to String
+            let numTwoInt = Int(numTwoStr) // convert from String to Integer
+            if let unwrappedNumTwo = numTwoInt {
+                num2 = unwrappedNumTwo
+            }
         }
         
-        /*
-         TODO : Use Switch to implement the following logic.
-         
-        key
-         + -> set label to the combination result of num1 & num2
-         - -> set label to the substruction result of num1 & num2
-         * -> set label to the multiplication result of num1 & num2
-         / -> set label to the division result of num1 & num2
-         default -> set label to "0"
-        */
+        switch key {
+        case "+":
+            labelresult.text = "\(num1 + num2)"
+        case "-":
+            labelresult.text = "\(num1 - num2)"
+        case "*":
+            labelresult.text = "\(num1 * num2)"
+        case "/":
+            labelresult.text = "\(num1 / num2)"
+        default:
+            labelresult.text = "0"
+        }
         
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dhI-IH-RCn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5aw-ph-K8g">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--PADC Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-ZA-2Iw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qp-kz-v1G">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -36,7 +36,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nue-gI-fAA">
-                                        <rect key="frame" x="0.0" y="230" width="414" height="588"/>
+                                        <rect key="frame" x="0.0" y="230" width="414" height="544"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-mt-kBd">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -95,10 +95,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PsG-VC-NIb">
-                                                <rect key="frame" x="0.0" y="62" width="414" height="117"/>
+                                                <rect key="frame" x="0.0" y="62" width="414" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-fp-hu8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="117"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="1">
@@ -109,7 +109,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJu-52-qOq">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="117"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="2">
@@ -120,7 +120,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDH-So-Ujr">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="117"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="3">
@@ -141,10 +141,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-H2-h6z">
-                                                <rect key="frame" x="0.0" y="181" width="414" height="117"/>
+                                                <rect key="frame" x="0.0" y="172" width="414" height="108.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cZ-uL-p3T">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="117"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="4">
@@ -155,7 +155,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-PA-aEy">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="117"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="5">
@@ -166,7 +166,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-SO-dpf">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="117"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="6">
@@ -187,10 +187,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="quO-xT-qbC">
-                                                <rect key="frame" x="0.0" y="300" width="414" height="116.5"/>
+                                                <rect key="frame" x="0.0" y="282.5" width="414" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-jj-aMp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="116.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="7">
@@ -201,7 +201,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-BT-qBg">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="116.5"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="8">
@@ -212,7 +212,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-wi-Z8x">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="116.5"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="9">
@@ -233,10 +233,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-OR-Yjd">
-                                                <rect key="frame" x="0.0" y="418.5" width="414" height="169.5"/>
+                                                <rect key="frame" x="0.0" y="392.5" width="414" height="151.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-sx-iyI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="169.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="151.5"/>
                                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="35"/>
                                                         <state key="normal" title="C">
@@ -247,7 +247,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHF-Dc-U2y">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="169.5"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="151.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="0">
@@ -258,7 +258,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-YK-MKM">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="169.5"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="151.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="=">
@@ -310,6 +310,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="PADC Calculator" id="Zo7-zv-Ces">
+                        <barButtonItem key="rightBarButtonItem" title="History" image="icons8-clock_8-1" id="y0P-Q2-Lk4">
+                            <connections>
+                                <segue destination="6Ho-k7-RYt" kind="show" id="k4u-08-7Cu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnDivide" destination="q2f-s4-hJc" id="csq-h3-mNZ"/>
                         <outlet property="btnEight" destination="MMK-BT-qBg" id="s9q-Cn-fZi"/>
@@ -330,6 +337,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="94.419642857142847"/>
+        </scene>
+        <!--Calculation HIstory-->
+        <scene sceneID="v8b-vw-LDR">
+            <objects>
+                <viewController title="Calculation HIstory" id="6Ho-k7-RYt" customClass="CalculationHistoryViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cd3-9g-cYA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-6n-jea">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalculationHistoryTableViewCell" id="CMe-Q4-3AR" customClass="CalculationHistoryTableViewCell" customModule="padc_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMe-Q4-3AR" id="v1f-4c-cHs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-8N-Lc2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : 800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-ig-rOL">
+                                                            <rect key="frame" x="0.0" y="9.5" width="414" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="Gkp-4R-waK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="DRh-ig-rOL" firstAttribute="centerY" secondItem="2Hy-8N-Lc2" secondAttribute="centerY" id="71T-Z7-BdB"/>
+                                                        <constraint firstItem="DRh-ig-rOL" firstAttribute="leading" secondItem="2Hy-8N-Lc2" secondAttribute="leading" id="9Gl-AJ-zMl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DRh-ig-rOL" secondAttribute="trailing" id="Vfw-2N-RgJ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2Hy-8N-Lc2" secondAttribute="bottom" id="KzK-lX-Hns"/>
+                                                <constraint firstItem="2Hy-8N-Lc2" firstAttribute="top" secondItem="v1f-4c-cHs" secondAttribute="top" id="ljN-dg-Ct9"/>
+                                                <constraint firstItem="2Hy-8N-Lc2" firstAttribute="leading" secondItem="v1f-4c-cHs" secondAttribute="leading" id="nkC-bG-4FG"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Hy-8N-Lc2" secondAttribute="trailing" id="q8G-au-l4r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RbM-6n-jea" firstAttribute="top" secondItem="OtP-tA-7Eh" secondAttribute="top" id="2SS-hj-T23"/>
+                            <constraint firstItem="OtP-tA-7Eh" firstAttribute="trailing" secondItem="RbM-6n-jea" secondAttribute="trailing" id="9Di-I2-FZn"/>
+                            <constraint firstItem="OtP-tA-7Eh" firstAttribute="bottom" secondItem="RbM-6n-jea" secondAttribute="bottom" id="cZl-Wp-fBO"/>
+                            <constraint firstItem="RbM-6n-jea" firstAttribute="leading" secondItem="OtP-tA-7Eh" secondAttribute="leading" id="gWF-LI-2cG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OtP-tA-7Eh"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="RbM-6n-jea" id="alF-oL-m2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLY-sg-QJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="94"/>
         </scene>
         <!--Playground View Controller-->
         <scene sceneID="kI5-cE-8zk">
@@ -358,5 +434,26 @@
             </objects>
             <point key="canvasLocation" x="138" y="802"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X7w-6u-r1b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5aw-ph-K8g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Nk-R3-K1R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="as8-uy-6Uf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KmG-Lb-8kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="94"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-clock_8-1" width="32" height="32"/>
+    </resources>
 </document>
