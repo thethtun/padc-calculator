@@ -11,6 +11,7 @@ import Foundation
 
 
 func play2 () {
+    
 //create a class
 //    class Animal {
 //        var name : String
@@ -32,13 +33,13 @@ func play2 () {
 //        var name : String = "unknown animal" //Default initializer
 //    }
 //    let animal = Animal()
+//    animal.name = "Dog"
 //    print(animal.name)
-    
+//
 
 //Initialization using init()
 //    class Animal {
 //        var name : String
-//
 //        init(name : String) {
 //            self.name = name
 //        }
@@ -48,8 +49,10 @@ func play2 () {
 //  Init() overloading
 //    class Animal {
 //        var name : String = ""
+//        var skinColor : String = ""
 //        init(name : String) {
 //            self.name = name
+//            self.skinColor = "black"
 //        }
 //
 //        init(identity : String) {
@@ -62,31 +65,108 @@ func play2 () {
 //    }
 //    let bird = Animal(name: "bird")
 //    let dog = Animal(identity: "dog")
-//    let cat = Animal(identity: "cat")
-    
+//    let cat = Animal(knownAs: "cat")
+//
 
 //Designated initializer
 
-
-
-//Convenience initializer
-//    class CatGenerator { //<- 1
+    
+//========================
+    /*
+     Exercise - create classes
+     
+     Steps
+     1. Create a fruit class with parameters name, price
+     2. Create a meat class with parameters name, price
+     3. Create a drink class with parameters name, price
+     4. Create a list of fruit
+     5. Create a list of meat
+     6. Create a list of drinks
+     7. Prints all items
+     */
+    
+//    class Fruit {
 //        var name : String
-//        var skinColor : String
-//        var numberOfTails : Int
-//        var numberOfEyes : Int
-//          //<-2
-////        init(name : String, skinColor : String, numberOfTails : Int, numberOfEyes : Int) {
-////            self.name = name
-////            self.skinColor = skinColor
-////            self.numberOfTails = numberOfTails
-////            self.numberOfEyes = numberOfEyes
-////        }
-////
-//////        convenience init(name : String) { //<- 3
-//////            self.init(name : name, skinColor : "brown", numberOfTails : 1, numberOfEyes : 2)
-//////        }
+//        var price : Int
+//
+//        init(name : String, price : Int) {
+//            self.name = name
+//            self.price = price
+//        }
 //    }
+//
+//    class Drink {
+//        var name : String
+//        var price : Int
+//
+//        init() {
+//            self.name = "cola"
+//            self.price = 300
+//        }
+//
+//        init(name : String, price : Int) {
+//            self.name = name
+//            self.price = price
+//        }
+//    }
+//
+//    class Meat {
+//        var name : String
+//        var price : Int
+//
+//        init(name : String, price : Int) { //Designated Initializers
+//            self.name = name
+//            self.price = price
+//        }
+//    }
+//
+//    var fruits = [Fruit]()
+//    fruits.append(Fruit(name: "apple", price: 1000))
+//    fruits.append(Fruit(name: "orange", price: 2000))
+//    fruits.append(Fruit(name: "banana", price: 100))
+//
+//    var meat = [Meat]()
+//    meat.append(Meat(name: "lamb", price: 15000))
+//    meat.append(Meat(name: "pork", price: 4000))
+//    meat.append(Meat(name: "chicken", price: 10000))
+//
+//    var drinks = [Drink]()
+//    drinks.append(Drink())
+//    drinks.append(Drink(name: "pepsi", price: 400))
+//    drinks.append(Drink())
+//
+//    for item in fruits {
+//        print(item.name)
+//    }
+//
+//    for item in meat {
+//        print(item.name)
+//    }
+//
+//    for item in drinks {
+//        print(item.name)
+//    }
+    
+//========================
+    
+//Convenience initializer
+    class CatGenerator { //<- 1
+        var name : String
+        var skinColor : String
+        var numberOfTails : Int
+        var numberOfEyes : Int
+          //<-2
+        init(name : String, skinColor : String, numberOfTails : Int, numberOfEyes : Int) {
+            self.name = name
+            self.skinColor = skinColor
+            self.numberOfTails = numberOfTails
+            self.numberOfEyes = numberOfEyes
+        }
+//
+        convenience init(name : String) { //<- 3 //Secondary
+            self.init(name : name, skinColor : "brown", numberOfTails : 1, numberOfEyes : 2)
+        }
+    }
     
     
 //
@@ -97,6 +177,15 @@ func play2 () {
 //    <- 4
 //    let normalcat = CatGenerator(name: "garfield")
 
+//===============
+    /*
+    Exercise - implementing convience initializer
+     Steps
+     1. set an empty convenience initializer for drink class which initialize with name "Cola", price "300" by default
+     2. Add a few more drinks just by initializing a drink object without any parameters
+     */
+//===============
+    
     
     /*
     Designated Initializer သည် super class မှာရှိတဲ့  Designated Initializer ကိုပဲခေါ်လို့ရတယ်။
@@ -104,6 +193,7 @@ func play2 () {
      Convenience Initializer သည် curret class ရဲ့ DI ကို ခေါ်သုံးလို့ရတယ်။
      */
 
+//
 //    class SuperCatGenerator : CatGenerator { //<- 1
 //        var superPower : String
 //        init(superPower : String) {
@@ -111,9 +201,9 @@ func play2 () {
 //            super.init(name: "meow meow", skinColor: "rainbow", numberOfTails: 9, numberOfEyes: 3)
 //        }
 //
-////        convenience init() { //<- 2
-////            self.init(superPower: "flying")
-////        }
+//        convenience init() { //<- 2
+//            self.init(superPower: "flying")
+//        }
 //
 //    }
     
@@ -130,6 +220,9 @@ func play2 () {
 //        init?(name : String) {
 //            if name.isEmpty {
 //                return nil
+//            } else if name == "human" {
+//                print("A human is not an animal")
+//                return nil
 //            }
 //            self.name = name
 //        }
@@ -138,9 +231,13 @@ func play2 () {
 //    print(animal) //prints nil <- 1
 //    let animal = Animal(name: "dog")
 //    print(animal?.name ?? "unknown creature") //<- 2 unwrapping with nil coalensing operator
+//    let animal = Animal(name: "human")
+//    print(animal) //nil
 //    guard let uwrappedAnimal = animal else {return} //<- 3 unwrapping with guard let statement
 //    print(uwrappedAnimal.name)
     
+    //Exercise
+    // If human -> nil
     
 //    Required Initializers
 //    Required သတ်မှတ်ထားတဲ့ initializer တွေကို subclass တွေမှာပြန် implement လုပ်ဖို့လို
@@ -151,16 +248,16 @@ func play2 () {
 //            self.name = name
 //        }
 //
-////        required init?(emptyableName : String) {
-////            if emptyableName.isEmpty {return nil}
-////            else {self.name = emptyableName} //<- 2
-////        }
+//        required init?(emptyableName : String) {
+//            if emptyableName.isEmpty {return nil}
+//            else {self.name = emptyableName} //<- 2
+//        }
 ////
-//////        required convenience init() { //<- 3
-//////            self.init(name : "dog")
-//////        }
+//        required convenience init() { //<- 3
+//            self.init(name : "dog")
+//        }
 //    }
-
+//
 //    class Cat : Animal { //<- 1
 //        var skinColor : String = "black"
 //        init(skinColor : String, name : String) {
@@ -168,16 +265,16 @@ func play2 () {
 //            super.init(name: name)
 //        }
 //
-////        required init?(emptyableName: String) {
-////            super.init(emptyableName: emptyableName) //<- 2
-////        }
-////
-//////        required convenience init() {
-//////            self.init(skinColor: "blue", name: "dog") //<- 3
-//////        }
+//        required init?(emptyableName: String) {
+//            super.init(emptyableName: emptyableName) //<- 2
+//        }
+//
+//        required convenience init() {
+//            self.init(skinColor: "blue", name: "dog") //<- 3
+//        }
 //    }
-    
 
+    
 
 //    Deinitalization
 //   uses deinit {}
@@ -194,14 +291,14 @@ func play2 () {
 //            return identity
 //        }
 //    }
-    
+//
 //    let animal = Animal()
-    
-    //Getters
+//
+//    //Getters
 //    let _ = animal.identity
 //    let _ = animal.getIdentity()
-    
-    //Setters
+//
+//    //Setters
 //    animal.identity = "Dog"
 //    animal.setIdentity(identity: "Dog")
     
@@ -209,18 +306,19 @@ func play2 () {
     
 //    overriding getters / setters
 //    class Animal {
-//        var identity : String {
-//            get {
-////                return identity //will crash due to recursive loop
-//                return "Some Value"
-//            }
-//            set(value) {
-//                if value.isEmpty {
-//                    self.identity = "unknown creature"
-//                }
+////        var identity : String {
+////            get {
+//////                return identity //will crash due to recursive loop
+////                return "Some Value"
+////            }
+////            set(value) {
+////                if value.isEmpty {
+////                    self.identity = "unknown creature"
+////                }
+////
+////            }
+////        }
 //
-//            }
-//        }
 //    }
     
 //    let animal = Animal()
@@ -230,6 +328,30 @@ func play2 () {
     
 //    instance variable vs type variable
 //    instance method vs type method
+//
+//    class Animal  {
+//        var name : String = ""
+//
+//        static let what = "This is an Animal"
+//        init(_ name : String) {
+//            self.name = name
+//        }
+//
+//        func sleep() {
+//            print("Animal goes to sleep")
+//        }
+//
+//        static func eat() {
+//            print("Animal eats")
+//        }
+//    }
+//
+//    let animal = Animal("")
+//    let _ = animal.name //Instance variable
+//    animal.sleep()
+//    print(Animal.what)
+//    print(Animal.eat())
+    
     
     
 //  property overriding && method overriding
@@ -245,7 +367,7 @@ func play2 () {
 //            print("\(name) eats grass")
 //        }
 //    }
-    
+//
 //    let animal = Animal(name: "Cat")
 //    print(animal.eat())
     
@@ -255,16 +377,18 @@ func play2 () {
 //            print("\(name) eats fish")
 //        }
 //    }
-//
+////
 //    let animal = Cat(name: "Cat")
 //    print(animal.eat())
 
     
-    
 // struct
+//    No Inheritance
+//    Default Initialization
 //    struct Animal {
 //        //No need for init() method -> auto generated
 //        var name : String
+//        var skinColor : String
 //    }
 //
 //    let animal = Animal(name: "Cat")
@@ -302,11 +426,11 @@ func play2 () {
 //    class cAnimal {
 //        var name : String = "Cat"
 //    }
-//
+////
 //    struct sAnimal {
 //        var name : String = "Cat"
 //    }
-    
+//
 //    let canimal1 = cAnimal()
 //    let canimal2 = canimal1
 //    print(canimal1.name) //Print "Cat"
@@ -314,18 +438,19 @@ func play2 () {
 //    canimal1.name = "Dog"
 //    print(canimal1.name) //Print "Dog"
 //    print(canimal2.name) //Print "Dog"
-//
+////
 //    var sanimal1 = sAnimal()
-//    let sanimal2 = sanimal1
+//    var sanimal2 = sanimal1 // sanimal2 != sanimal1
 //    print(sanimal1.name) //Print "Cat"
 //    print(sanimal2.name) //Print "Cat"
 //    sanimal1.name = "Dog"
 //    print(sanimal1.name) //Print "Dog"
+//    sanimal2.name = "Something"
 //    print(sanimal2.name) //Print "Cat"
     
     
 //    Enumerations
-//    enum WeekDay {
+//    enum WeekDay : String {
 //        case Mon
 //        case Tue
 //        case Wed
@@ -333,8 +458,9 @@ func play2 () {
 //        case Fri
 //    }
 //
-//    print(WeekDay.Mon)
+//    print(WeekDay.Mon.rawValue)
 //
+    
     
 //    Using with switch
 //    switch WeekDay.Fri {
@@ -359,7 +485,7 @@ func play2 () {
 //        case Thurs
 //        case Fri
 //    }
-//
+////
 //    for weekday in WeekDay.allCases {
 //        print(weekday)
 //    }
@@ -371,7 +497,7 @@ func play2 () {
 //        case Square(x: Int)
 //        case Sky
 //    }
-//
+////
 //    let rectangle = Shape.Rectangle(x: 100, y: 30)
 //    switch rectangle {
 //    case Shape.Rectangle(x: 50, y: 50):
@@ -391,93 +517,215 @@ func play2 () {
 //
 //    print(WeekEnd.Sat.rawValue)
     
-    
-//    func calculate(num1 : Int, num2 : Int, formula : (Int, Int) -> Int) {
-//        print(formula(num1, num2))
-//    }
-    
-//    calculate(num1: 10, num2: 20, formula: {(value1, value2) -> Int in
-//        return value1 + value2
-//    })
-    
-//    calculate(num1: 10, num2: 20, formula: {(value1, value2) -> Int in
-//        value1 + value2
-//    })
-    
-//    calculate(num1: 10, num2: 20) { value1, value2 -> Int in
-//        value1 + value2
-//    }
-    
-//    calculate(num1: 10, num2: 20) { value1, value2  in value1 + value2 }
-    
-//    calculate(num1: 10, num2: 20, formula: { $0 + $1 }) //Shorthand
-    
-//    calculate(num1: 10, num2: 20) { //Trailing closure
-//        $0 + $1
-//    }
-    
-    
-//   Assigning closure to a variable
-    
-//    var formula = {(num1 : Int, num2: Int) -> Int in
-//        return num1 + num2
+//====================
+    /*
+     Exercise
+     Steps
+     1. Create an enum for calculation operator
+     2. Replace switch statement string check with enum type
+     */
+//====================
+//Closures
+//Closure init
+
+//Exercise
+//Conver the following function to closure
+//    func sayHello() {
+//        print("hello functions")
 //    }
 
+//Assigning to variable
+//    let variable = { (value : String, value2 : String) -> String in
+//        return "\(value) & \(value2)"
+//    }
+
+//    print(variable("cat", "dog"))
+
+    
+//   Assigning closure to a variable & pass as parameter value
+//    var summationformula = { (num1 : Int, num2: Int) -> Int in
+//        return num1 + num2
+//    }
+//
 //    func calculate (num1: Int, num2 : Int, formula : (Int, Int) -> Int) {
 //        print(formula(num1, num2))
 //    }
 //
-//    calculate(num1: 10, num2: 10, formula: formula)
+//    calculate(num1: 10, num2: 10, formula: { (num1, num2) -> Int in return num1 * num2 })
+//
+//    calculate(num1: 10, num2: 10, formula: summationformula)
 
-//    formula = { (num1:Int, num2:Int) -> Int in
-//        return num1 * num2
+
+
+//Closure Type
+//    let variable = { (value : String, value2 : String) -> String in
+//        return "\(value) & \(value2)"
 //    }
-
-//    calculate(num1: 10, num2: 10, formula: formula)
-
-//    Escaping closure vs non escaping closure
+//
+//    var lateClosure : ((String, String) -> Void)?
+//    lateClosure = { (name : String, phone : String) -> Void in
+//        print("\(name) & \(phone)")
+//    }
+//
+//    var variable2 : ((String, String) -> String)?
+//    variable2 = variable //Optional closure
+//    print(variable2!("bread", "toast"))
     
-//    var completionHandler : () -> Void = { }
-//    func calculate (num1: Int, num2 : Int, formula : (Int, Int) -> Int, completion: @escaping () -> Void) {
-//        let result = formula(num1, num2)
-//
-//        completionHandler = completion
-//
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { //wait for 3 seconds - async network call
-//            completion()
-//        }
+//    let sum = { (value1 : Int, value2 : Int) -> Int in
+//        return value1 + value2
 //    }
-//
-//
-//    calculate(num1: 10, num2: 10, formula: {$0 + $1}, completion: {
-//        print("Total result is ")
+
+//    print(sum(1,2))
+    
+//Closure as function parameter - syntax
+    func calculate(num1 : Int,
+                   num2 : Int,
+                   formula : (Int, Int) -> Int) {
+        print(formula(num1, num2))
+    }
+
+//    calculate(num1: 10, num2: 20, formula: {(num1, num2) -> Int in
+//        return num1 * num2
 //    })
 //
-//    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { //wait for 1 seconds
-//        completionHandler()
+//    calculate(num1: 10, num2: 20, formula: {(value1, value2) -> Int in
+//        return value1 + value2 //full syntax
+//    })
+//
+//    calculate(num1: 10, num2: 20, formula: { (value1, value2) -> Int in
+//        value1 + value2 //omit return keyword
+//    })
+//
+//    calculate(num1: 10, num2: 20) { value1, value2 -> Int in
+//        value1 + value2 //no parameter parenthesis
 //    }
 //
+//    calculate(num1: 10, num2: 20) { (value1, value2) in value1 + value2 } // omitting return type
+//
+//    calculate(num1: 10, num2: 20, formula: { $0 + $1 }) //Shorthand
+
+//Trailing closure - syntax
+//    var fruits = [String]()
+//
+//    fruits.sort(by: { (value1, value2) -> Bool in
+//        return value1 > value2
+//    })
+//
+//    fruits.sort { (value1, value2) -> Bool in
+//        return value1 > value2
+//    }
+    
+//Exercise
+//omit return keyword
+//omit return type
+//omit remove paramthesis
+//shorthand
+    
+//    fruits.sort { (value1, value2) -> Bool in
+//        value1 > value2
+//    }
+//
+//    fruits.sort { (value1, value2) in
+//        value1 > value2
+//    }
+//
+//    fruits.sort { value1, value2 in
+//        value1 > value2
+//    }
+//
+//    fruits.sort { $0 > $1 }
+    
+//    fruits.sort { (value1, value2) -> Bool in
+//        return value1 > value2
+//    }
+
+//    calculate(num1: 10, num2: 20) { //Trailing closure
+//        $0 + $1
+//    }
+    
+
+//Escaping closure vs non escaping closure
+//Default -> non escaping closure
+//Non Escaping Closure
+//    func someFunction(closure : () -> Void) {
+//        closure()
+//
+//    }
+//
+//    someFunction { //Trailing closure
+//        print("hello non escaping closure")
+//    }
+   
+//Escaping closure
+//    func someFunction(closure : @escaping () -> Void) {
+//
+//        //Async eg, network call
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {(
+//            closure()
+//        )})// Execute after 2 seconds
+//
+//    }
+////
+//    someFunction {
+//        print("hello non escaping closure")
+//    }
+
+//Exercise - Pop Quiz
+    /*
+     1) Default Clousure are escaping - T/F
+     2) When to use escaping closure?
+         a) Parameter ထဲထည့်ထားတဲ့ closure သည် parent function ထက် lifetime ပိုကြာရင် သုံးတယ်။
+         b) Parameter ထဲထည့်ထားတဲ့ closure သည် parent function နှင့် lifetime တူရင် သုံးတယ်။
+     */
     
 
 //autoclosure
-//    var customersInLine = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
-//    print(customersInLine.count)
-//    // Prints "5"
-//
-//    let customerProvider = { () -> String in return customersInLine.remove(at: 0) }
-//    print(customersInLine.count)
-//    // Prints "5"
-//
-//    print("Now serving \(customerProvider())!")
-//    // Prints "Now serving Chris!"
-//    print(customersInLine.count)
-//    // Prints "4"
+//Expression အနေနဲ့ pass လုပ်ပေးလိုက်တဲ့ function parameter ကို automatically closure တစ်ခုအဖြစ်ပြောင်းလဲပေးတယ်။
+//What is expression?
+//    print("hello, world")
+//    var a = ""
+//    func sum () -> Int {
+//        return 0
+//    }
     
+//
+//    func someFunction(closure : @autoclosure () -> Void /*expression*/) {
+//        closure()
+//    }
+
+//    someFunction(closure : {() -> Void in
+//        print("hello closure")
+//    })
+    
+//    someFunction(closure: print("hello auto closure") )
+    
+    
+//Exercise
+    
+//Convert formula closure to autoclosure & implement formulae for plus, minus, multiply
+    func calculate(calculation : @autoclosure () -> Int) {
+        print(calculation())
+    }
+////Calculate 1 + 2
+    calculate(calculation: 1 + 2)
+////Calculate 1 * 2
+    calculate(calculation: 1 * 2)
+////Calculate 1 / 2
+    calculate(calculation: 1 / 2) //expression
+    
+    func calculate2(calculation :() -> Int) {
+        print(calculation())
+    }
+    
+    calculate2(calculation: { 1 + 2 }) //closure
+    
+    calculate2(calculation: { 1 * 2 })
+    
+    calculate2(calculation: { 1 / 2 })
 
     
     
     
- 
     
     
     
@@ -485,7 +733,10 @@ func play2 () {
     
     
     
-    
+//    let boss = Boss(tasks: ["making proposals", "getting appointments with clients"])
+//    boss.hireEmployee(employee: Employee())
+//    boss.doWork()
+//
     
     
     
@@ -493,27 +744,51 @@ func play2 () {
 
 //create a protocol / delegate
 //protocol AnimalBehaviour {
-//    var language : String { get set } //property protocol
+//    var language : String { get  } //property protocol
 //    init(language : String) //init protocol
 //    func eat(stuff: String) //method protocol
 //    func speak()
 //}
-
-//implementing / conforming to protocol
+//
+////implementing / conforming to protocol
 //class cAnimal : AnimalBehaviour {
+//    var language: String
+//
+//    required init(language: String) {
+//        self.language = language
+//    }
+//
+//    func eat(stuff: String) {
+//
+//    }
+//
+//    func speak() {
+//
+//    }
+//
 //    //implement here
 //}
 
 //optional protocol
-//@objc protocol AnimalBehaviour {
-//    var language : String { get set } //property protocol
-//    init(language : String) //init protocol
-//    func eat(stuff: String) //method protocol
-//    @objc optional func speak()
-//}
-
-//implementing / conforming to protocol
+@objc protocol AnimalBehaviour {
+    var language : String { get set } //property protocol
+    init(language : String) //init protocol
+    func eat(stuff: String) //method protocol
+    @objc optional func speak()
+}
+//
+////implementing / conforming to protocol
 //class cAnimal : AnimalBehaviour {
+//    var language: String
+//
+//    required init(language: String) {
+//        <#code#>
+//    }
+//
+//    func eat(stuff: String) {
+//        <#code#>
+//    }
+//
 //    //implement here
 //}
 
@@ -522,16 +797,16 @@ func play2 () {
 //protocol Animal {
 //
 //}
+////
+//class Lion : Animal { //Lion is an animal
 //
-//class Lion : Animal {
+//}
+//
+//class Monkey : Animal { //Monkey is an animal
 //
 //}
 //
-//class Monkey : Animal {
 //
-//}
-
-
 //class AnimalKingdom {
 //    var animals = [Animal]()
 //
@@ -548,45 +823,55 @@ func play2 () {
 //protocol Work {
 //    func getThingsDone(task : String)
 //}
-
+//
 //class Employee : Work {
 //    func getThingsDone(task: String) {
 //        print("Working on \(task)")
 //    }
 //}
+//
+
 
 //class Boss {
-//    var work : Work?
+//    var employee : Work?
 //    var tasks : [String]
 //    init(tasks: [String]) {
 //        self.tasks = tasks
 //    }
 //
 //    func hireEmployee (employee : Employee) { //set delegation
-//        self.work = employee
+//        self.employee = employee
 //    }
 //
 //    func doWork() {
 //        for task in tasks {
-//            work?.getThingsDone(task: task)
+//            employee?.getThingsDone(task: task)
 //        }
 //    }
 //}
 
-//let boss = Boss(tasks: ["making proposals", "getting appointments with clients"])
-//boss.hireEmployee(employee: Employee())
-//boss.doWork()
+
 
 //Protocol Inheritance
-
+//protocol Animal {
+//
+//}
+//
+//protocol Amphibian : Animal {
+//
+//}
 
 //Protocol Composition
+//class Crocodile : Amphibian, Animal {
+//
+//}
+
 
 
 //Extension - add new functionalities to an existing class, structure, enumeration or protocol type
-//protocol Work {
-//    func getThingsDone(task : String)
-//}
+protocol Work {
+    func getThingsDone(task : String)
+}
 //
 //class Employee : Work {
 //    func getThingsDone(task: String) {
@@ -594,9 +879,9 @@ func play2 () {
 //    }
 //}
 //
-//@objc protocol Human {
-//    @objc optional func relax()
-//}
+@objc protocol Human {
+    @objc optional func relax()
+}
 
 //class Employee : Work, Human {
 //    func getThingsDone(task: String) {
@@ -604,25 +889,26 @@ func play2 () {
 //    }
 //}
 
-//extension Employee : Human { //class extension
-//
-//}
+class Employee : Work {
+    func getThingsDone(task: String) {
+        print("Working on \(task)")
+    }
+}
 
-//extension String { //struct extension
-//    func withModifiedString() -> String {
-//        return "\(self) ..."
-//    }
-//}
+extension String { //struct extension
+    func withModifiedString() -> String {
+        return "\(self) ..."
+    }
+}
 
-//extension Human { //protocol extension
-//    func eat() {
-//       print("a human eats")
-//    }
-//}
+extension Human { //protocol extension
+    func eat() {
+       print("a human eats")
+    }
+}
 
-//extension Employee : Human {
-//
-//}
+extension Employee : Human {
+    
+}
 
-//let e = Employee()
-//e.eat()
+

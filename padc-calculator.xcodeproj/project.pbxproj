@@ -11,6 +11,7 @@
 		517BC68722FF285D005B274B /* PlayGround2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BC68622FF285D005B274B /* PlayGround2.swift */; };
 		517BC68922FFE9E6005B274B /* CalculationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BC68822FFE9E6005B274B /* CalculationHistoryViewController.swift */; };
 		517BC68B22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BC68A22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift */; };
+		51926E2C2305BA560035C4BE /* PlayGround3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51926E2B2305BA550035C4BE /* PlayGround3.swift */; };
 		5196898522FDC55D00ECB646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196898422FDC55D00ECB646 /* AppDelegate.swift */; };
 		5196898722FDC55D00ECB646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196898622FDC55D00ECB646 /* ViewController.swift */; };
 		5196898A22FDC55D00ECB646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5196898822FDC55D00ECB646 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		517BC68622FF285D005B274B /* PlayGround2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGround2.swift; sourceTree = "<group>"; };
 		517BC68822FFE9E6005B274B /* CalculationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHistoryViewController.swift; sourceTree = "<group>"; };
 		517BC68A22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		51926E2B2305BA550035C4BE /* PlayGround3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGround3.swift; sourceTree = "<group>"; };
 		5196898122FDC55D00ECB646 /* padc-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "padc-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5196898422FDC55D00ECB646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5196898622FDC55D00ECB646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				517BC68622FF285D005B274B /* PlayGround2.swift */,
 				517BC68822FFE9E6005B274B /* CalculationHistoryViewController.swift */,
 				517BC68A22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift */,
+				51926E2B2305BA550035C4BE /* PlayGround3.swift */,
 			);
 			path = "padc-calculator";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				5196898722FDC55D00ECB646 /* ViewController.swift in Sources */,
 				517BC68722FF285D005B274B /* PlayGround2.swift in Sources */,
 				517BC68522FEAC84005B274B /* PlaygroundViewController.swift in Sources */,
+				51926E2C2305BA560035C4BE /* PlayGround3.swift in Sources */,
 				517BC68922FFE9E6005B274B /* CalculationHistoryViewController.swift in Sources */,
 				5196899722FE683300ECB646 /* playGround.swift in Sources */,
 				5196898522FDC55D00ECB646 /* AppDelegate.swift in Sources */,

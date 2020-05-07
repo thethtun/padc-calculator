@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum Operators : String {
+    case plus = "+"
+    case minus = "-"
+    case multiply = "*"
+    case divide = "/"
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var btnOne : UIButton!
@@ -25,11 +32,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnMinus : UIButton!
     @IBOutlet weak var btnMultiply : UIButton!
     @IBOutlet weak var btnDivide : UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        play2()
     }
-
+    
     @IBAction func onClickOne(_ sender : Any) {
         addNumberString(value: "1")
     }
@@ -97,23 +105,25 @@ class ViewController: UIViewController {
     @IBAction func onClickCalculate(_ sender : Any) {
         defineResult(query: labelresult.text!)
     }
+    
 
     func defineResult(query : String) {
         
         if query.contains("+") {
-            calculate(key: "+", queryToCalculate: query)
+            calculate(key: Operators.plus, queryToCalculate: query)
         } else if query.contains("-") {
-            calculate(key: "-", queryToCalculate: query)
+            calculate(key: Operators.minus, queryToCalculate: query)
         } else if query.contains("*") {
-            calculate(key: "*", queryToCalculate: query)
+            calculate(key: Operators.multiply, queryToCalculate: query)
         } else if query.contains("/") {
-            calculate(key: "/", queryToCalculate: query)
+            calculate(key: Operators.divide, queryToCalculate: query)
         }
+        
         
     }
     
-    func calculate(key : Character, queryToCalculate : String) {
-        let numbers = queryToCalculate.split(separator: key)
+    func calculate(key : Operators, queryToCalculate : String) {
+        let numbers = queryToCalculate.split(separator: Character(key.rawValue) )
         var num1 : Int = 0
         var num2 : Int = 0
         let numOneStr = String(numbers[0]) // convert to SubString to String
@@ -133,17 +143,18 @@ class ViewController: UIViewController {
         }
         
         switch key {
-        case "+":
+        case Operators.plus:
             labelresult.text = "\(num1 + num2)"
-        case "-":
+        case Operators.minus:
             labelresult.text = "\(num1 - num2)"
-        case "*":
+        case Operators.multiply:
             labelresult.text = "\(num1 * num2)"
-        case "/":
+        case Operators.divide:
             labelresult.text = "\(num1 / num2)"
-        default:
-            labelresult.text = "0"
         }
+        
+        let calculatedHistory = CalculationHistory(id : history.count + 1,value : labelresult.text ?? "")
+        history.append(calculatedHistory)
         
     }
     
@@ -156,6 +167,9 @@ class ViewController: UIViewController {
     }
     
 
+    deinit {
+         print("Calculator view controller is released")
+    }
 }
 
 
