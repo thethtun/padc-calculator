@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:padc-calculator-swift-ui/padc-calculator-swift-ui.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:padc-calculator.xcodeproj">
+   </FileRef>
+</Workspace>
