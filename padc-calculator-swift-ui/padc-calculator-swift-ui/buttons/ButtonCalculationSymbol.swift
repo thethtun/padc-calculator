@@ -30,7 +30,7 @@ struct ButtonCalculationSymbol: View {
     }
     
     private func onTapAction() {
-self.existingResult = "\(self.existingResult)\(self.value)"
+        self.existingResult = "\(self.existingResult)\(self.value)"
         
         //Calculation
         existingResult = ButtonNumberPadItem_Calculate.defineResult(query: existingResult)

@@ -27,6 +27,8 @@ class CalculationHistoryViewController: UIViewController
         // Do any additional setup after loading the view.
         
         tableView.dataSource = self
+        view.accessibilityIdentifier = "CalculationHistoryViewController"
+        
 //        tableView.delegate = self
         
     }

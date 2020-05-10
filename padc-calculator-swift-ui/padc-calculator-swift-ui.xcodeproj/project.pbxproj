@@ -11,6 +11,7 @@
 		5164B6E024646792008BE41F /* ButtonNumberPadItem_Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6DF24646792008BE41F /* ButtonNumberPadItem_Calculate.swift */; };
 		5164B6E2246467B8008BE41F /* ButtonNumberPadItem_Clear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6E1246467B8008BE41F /* ButtonNumberPadItem_Clear.swift */; };
 		5164B6E5246467DA008BE41F /* ButtonNumberPadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6E4246467DA008BE41F /* ButtonNumberPadItem.swift */; };
+		5164B6E7246495EF008BE41F /* TempLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6E6246495EF008BE41F /* TempLayout.swift */; };
 		51F6DA552464092000A1CD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F6DA542464092000A1CD40 /* AppDelegate.swift */; };
 		51F6DA572464092000A1CD40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F6DA562464092000A1CD40 /* SceneDelegate.swift */; };
 		51F6DA5A2464092000A1CD40 /* padc_calculator_swift_ui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51F6DA582464092000A1CD40 /* padc_calculator_swift_ui.xcdatamodeld */; };
@@ -45,6 +46,7 @@
 		5164B6DF24646792008BE41F /* ButtonNumberPadItem_Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNumberPadItem_Calculate.swift; sourceTree = "<group>"; };
 		5164B6E1246467B8008BE41F /* ButtonNumberPadItem_Clear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNumberPadItem_Clear.swift; sourceTree = "<group>"; };
 		5164B6E4246467DA008BE41F /* ButtonNumberPadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNumberPadItem.swift; sourceTree = "<group>"; };
+		5164B6E6246495EF008BE41F /* TempLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempLayout.swift; sourceTree = "<group>"; };
 		51F6DA512464092000A1CD40 /* padc-calculator-swift-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "padc-calculator-swift-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F6DA542464092000A1CD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F6DA562464092000A1CD40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				51F6DA582464092000A1CD40 /* padc_calculator_swift_ui.xcdatamodeld */,
 				51F6DA5F2464092300A1CD40 /* Preview Content */,
 				51F6DA8724641E9900A1CD40 /* CalculatorView.swift */,
+				5164B6E6246495EF008BE41F /* TempLayout.swift */,
 			);
 			path = "padc-calculator-swift-ui";
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				51F6DA572464092000A1CD40 /* SceneDelegate.swift in Sources */,
 				5164B6E024646792008BE41F /* ButtonNumberPadItem_Calculate.swift in Sources */,
 				51F6DA5C2464092000A1CD40 /* ContentView.swift in Sources */,
+				5164B6E7246495EF008BE41F /* TempLayout.swift in Sources */,
 				5164B6E5246467DA008BE41F /* ButtonNumberPadItem.swift in Sources */,
 				51F6DA5A2464092000A1CD40 /* padc_calculator_swift_ui.xcdatamodeld in Sources */,
 			);

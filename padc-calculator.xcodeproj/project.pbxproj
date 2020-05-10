@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5164B6EF24664317008BE41F /* padc_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6EE24664317008BE41F /* padc_calculatorUITests.swift */; };
+		5164B6FD2466431F008BE41F /* padc_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6FC2466431F008BE41F /* padc_calculatorTests.swift */; };
 		517BC68922FFE9E6005B274B /* CalculationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BC68822FFE9E6005B274B /* CalculationHistoryViewController.swift */; };
 		517BC68B22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BC68A22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift */; };
 		5196898522FDC55D00ECB646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196898422FDC55D00ECB646 /* AppDelegate.swift */; };
@@ -16,7 +18,30 @@
 		5196898F22FDC56500ECB646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5196898D22FDC56500ECB646 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5164B6F124664317008BE41F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5196897922FDC55D00ECB646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5196898022FDC55D00ECB646;
+			remoteInfo = "padc-calculator";
+		};
+		5164B6FF2466431F008BE41F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5196897922FDC55D00ECB646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5196898022FDC55D00ECB646;
+			remoteInfo = "padc-calculator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5164B6EC24664317008BE41F /* padc-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "padc-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5164B6EE24664317008BE41F /* padc_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = padc_calculatorUITests.swift; sourceTree = "<group>"; };
+		5164B6F024664317008BE41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5164B6FA2466431F008BE41F /* padc-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "padc-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5164B6FC2466431F008BE41F /* padc_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = padc_calculatorTests.swift; sourceTree = "<group>"; };
+		5164B6FE2466431F008BE41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517BC68822FFE9E6005B274B /* CalculationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHistoryViewController.swift; sourceTree = "<group>"; };
 		517BC68A22FFEAB6005B274B /* CalculationHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5196898122FDC55D00ECB646 /* padc-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "padc-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5164B6E924664317008BE41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5164B6F72466431F008BE41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5196897E22FDC55D00ECB646 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5164B6ED24664317008BE41F /* padc-calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5164B6EE24664317008BE41F /* padc_calculatorUITests.swift */,
+				5164B6F024664317008BE41F /* Info.plist */,
+			);
+			path = "padc-calculatorUITests";
+			sourceTree = "<group>";
+		};
+		5164B6FB2466431F008BE41F /* padc-calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5164B6FC2466431F008BE41F /* padc_calculatorTests.swift */,
+				5164B6FE2466431F008BE41F /* Info.plist */,
+			);
+			path = "padc-calculatorTests";
+			sourceTree = "<group>";
+		};
 		5196897822FDC55D00ECB646 = {
 			isa = PBXGroup;
 			children = (
 				5196898322FDC55D00ECB646 /* padc-calculator */,
+				5164B6FB2466431F008BE41F /* padc-calculatorTests */,
+				5164B6ED24664317008BE41F /* padc-calculatorUITests */,
 				5196898222FDC55D00ECB646 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				5196898122FDC55D00ECB646 /* padc-calculator.app */,
+				5164B6EC24664317008BE41F /* padc-calculatorUITests.xctest */,
+				5164B6FA2466431F008BE41F /* padc-calculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +134,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5164B6EB24664317008BE41F /* padc-calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5164B6F524664317008BE41F /* Build configuration list for PBXNativeTarget "padc-calculatorUITests" */;
+			buildPhases = (
+				5164B6E824664317008BE41F /* Sources */,
+				5164B6E924664317008BE41F /* Frameworks */,
+				5164B6EA24664317008BE41F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5164B6F224664317008BE41F /* PBXTargetDependency */,
+			);
+			name = "padc-calculatorUITests";
+			productName = "padc-calculatorUITests";
+			productReference = 5164B6EC24664317008BE41F /* padc-calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5164B6F92466431F008BE41F /* padc-calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5164B7012466431F008BE41F /* Build configuration list for PBXNativeTarget "padc-calculatorTests" */;
+			buildPhases = (
+				5164B6F62466431F008BE41F /* Sources */,
+				5164B6F72466431F008BE41F /* Frameworks */,
+				5164B6F82466431F008BE41F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5164B7002466431F008BE41F /* PBXTargetDependency */,
+			);
+			name = "padc-calculatorTests";
+			productName = "padc-calculatorTests";
+			productReference = 5164B6FA2466431F008BE41F /* padc-calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5196898022FDC55D00ECB646 /* padc-calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5196899322FDC56500ECB646 /* Build configuration list for PBXNativeTarget "padc-calculator" */;
@@ -96,10 +193,18 @@
 		5196897922FDC55D00ECB646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "padc-cal";
 				TargetAttributes = {
+					5164B6EB24664317008BE41F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5196898022FDC55D00ECB646;
+					};
+					5164B6F92466431F008BE41F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5196898022FDC55D00ECB646;
+					};
 					5196898022FDC55D00ECB646 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -119,11 +224,27 @@
 			projectRoot = "";
 			targets = (
 				5196898022FDC55D00ECB646 /* padc-calculator */,
+				5164B6EB24664317008BE41F /* padc-calculatorUITests */,
+				5164B6F92466431F008BE41F /* padc-calculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5164B6EA24664317008BE41F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5164B6F82466431F008BE41F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5196897F22FDC55D00ECB646 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +258,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5164B6E824664317008BE41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5164B6EF24664317008BE41F /* padc_calculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5164B6F62466431F008BE41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5164B6FD2466431F008BE41F /* padc_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5196897D22FDC55D00ECB646 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +286,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5164B6F224664317008BE41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5196898022FDC55D00ECB646 /* padc-calculator */;
+			targetProxy = 5164B6F124664317008BE41F /* PBXContainerItemProxy */;
+		};
+		5164B7002466431F008BE41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5196898022FDC55D00ECB646 /* padc-calculator */;
+			targetProxy = 5164B6FF2466431F008BE41F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5196898822FDC55D00ECB646 /* Main.storyboard */ = {
@@ -170,6 +320,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5164B6F324664317008BE41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8KK28846H;
+				INFOPLIST_FILE = "padc-calculatorUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thethtun.padc-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "padc-calculator";
+			};
+			name = Debug;
+		};
+		5164B6F424664317008BE41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8KK28846H;
+				INFOPLIST_FILE = "padc-calculatorUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thethtun.padc-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "padc-calculator";
+			};
+			name = Release;
+		};
+		5164B7022466431F008BE41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8KK28846H;
+				INFOPLIST_FILE = "padc-calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thethtun.padc-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/padc-calculator.app/padc-calculator";
+			};
+			name = Debug;
+		};
+		5164B7032466431F008BE41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8KK28846H;
+				INFOPLIST_FILE = "padc-calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thethtun.padc-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/padc-calculator.app/padc-calculator";
+			};
+			name = Release;
+		};
 		5196899122FDC56500ECB646 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -325,6 +557,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5164B6F524664317008BE41F /* Build configuration list for PBXNativeTarget "padc-calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5164B6F324664317008BE41F /* Debug */,
+				5164B6F424664317008BE41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5164B7012466431F008BE41F /* Build configuration list for PBXNativeTarget "padc-calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5164B7022466431F008BE41F /* Debug */,
+				5164B7032466431F008BE41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5196897C22FDC55D00ECB646 /* Build configuration list for PBXProject "padc-calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

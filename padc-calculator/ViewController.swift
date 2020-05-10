@@ -33,8 +33,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnMultiply : UIButton!
     @IBOutlet weak var btnDivide : UIButton!
     
+    
+    @IBOutlet weak var navBarItemCalculationHistory : UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        labelresult.accessibilityIdentifier = "labelResult"
+        navBarItemCalculationHistory.accessibilityIdentifier = "navBarItemCalculationHistory"
     }
     
     @IBAction func onClickOne(_ sender : Any) {

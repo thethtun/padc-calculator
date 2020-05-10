@@ -331,16 +331,17 @@
                         <outlet property="btnTwo" destination="ZJu-52-qOq" id="vN1-Bf-YcP"/>
                         <outlet property="btnZero" destination="tHF-Dc-U2y" id="T5o-xu-gg4"/>
                         <outlet property="labelresult" destination="0Qp-kz-v1G" id="mtl-9e-lEd"/>
+                        <outlet property="navBarItemCalculationHistory" destination="y0P-Q2-Lk4" id="8B0-tY-BXw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="963.76811594202911" y="94.419642857142847"/>
         </scene>
-        <!--Calculation HIstory-->
+        <!--Calculation History-->
         <scene sceneID="v8b-vw-LDR">
             <objects>
-                <viewController storyboardIdentifier="CalculationHistoryViewController" title="Calculation HIstory" id="6Ho-k7-RYt" customClass="CalculationHistoryViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculationHistoryViewController" title="Calculation History" id="6Ho-k7-RYt" customClass="CalculationHistoryViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cd3-9g-cYA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

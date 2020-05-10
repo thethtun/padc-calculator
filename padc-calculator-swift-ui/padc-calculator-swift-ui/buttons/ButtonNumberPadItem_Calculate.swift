@@ -29,7 +29,7 @@ struct ButtonNumberPadItem_Calculate: View {
     }
     
     private func onTapAction() {
-        let tempValue = self.existingResult
+//        let tempValue = self.existingResult
         
         existingResult = ButtonNumberPadItem_Calculate.defineResult(query: existingResult)
         
