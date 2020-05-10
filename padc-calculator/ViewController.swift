@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        play2()
     }
     
     @IBAction func onClickOne(_ sender : Any) {
