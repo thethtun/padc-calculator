@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5aw-ph-K8g">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5aw-ph-K8g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +16,7 @@
         <!--PADC Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +93,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PsG-VC-NIb">
-                                                <rect key="frame" x="0.0" y="62" width="414" height="108"/>
+                                                <rect key="frame" x="0.0" y="62" width="414" height="105"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-fp-hu8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="1">
@@ -109,7 +107,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJu-52-qOq">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="2">
@@ -120,7 +118,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDH-So-Ujr">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="3">
@@ -141,10 +139,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-H2-h6z">
-                                                <rect key="frame" x="0.0" y="172" width="414" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="169" width="414" height="104.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cZ-uL-p3T">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="104.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="4">
@@ -155,7 +153,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-PA-aEy">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108.5"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="104.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="5">
@@ -166,7 +164,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-SO-dpf">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108.5"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="104.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="6">
@@ -187,10 +185,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="quO-xT-qbC">
-                                                <rect key="frame" x="0.0" y="282.5" width="414" height="108"/>
+                                                <rect key="frame" x="0.0" y="275.5" width="414" height="105"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-jj-aMp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="108"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="7">
@@ -201,7 +199,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-BT-qBg">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="108"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="8">
@@ -212,7 +210,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-wi-Z8x">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="108"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="105"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="9">
@@ -233,10 +231,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-OR-Yjd">
-                                                <rect key="frame" x="0.0" y="392.5" width="414" height="151.5"/>
+                                                <rect key="frame" x="0.0" y="382.5" width="414" height="161.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-sx-iyI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="151.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="161.5"/>
                                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="35"/>
                                                         <state key="normal" title="C">
@@ -247,7 +245,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHF-Dc-U2y">
-                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="151.5"/>
+                                                        <rect key="frame" x="138.5" y="0.0" width="137" height="161.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="0">
@@ -258,7 +256,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEb-YK-MKM">
-                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="151.5"/>
+                                                        <rect key="frame" x="277.5" y="0.0" width="136.5" height="161.5"/>
                                                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="38"/>
                                                         <state key="normal" title="=">
@@ -332,6 +330,7 @@
                         <outlet property="btnThree" destination="GDH-So-Ujr" id="cWb-nv-wOt"/>
                         <outlet property="btnTwo" destination="ZJu-52-qOq" id="vN1-Bf-YcP"/>
                         <outlet property="btnZero" destination="tHF-Dc-U2y" id="T5o-xu-gg4"/>
+                        <outlet property="buttonNavBarShowHistory" destination="y0P-Q2-Lk4" id="5Xg-NR-DPv"/>
                         <outlet property="labelresult" destination="0Qp-kz-v1G" id="mtl-9e-lEd"/>
                     </connections>
                 </viewController>
@@ -342,7 +341,7 @@
         <!--Calculation HIstory-->
         <scene sceneID="v8b-vw-LDR">
             <objects>
-                <viewController storyboardIdentifier="CalculationHistoryViewController" title="Calculation HIstory" id="6Ho-k7-RYt" customClass="CalculationHistoryViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculationHistoryViewController" title="Calculation HIstory" id="6Ho-k7-RYt" customClass="CalculationHistoryViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cd3-9g-cYA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,8 +350,8 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalculationHistoryTableViewCell" id="CMe-Q4-3AR" customClass="CalculationHistoryTableViewCell" customModule="padc_calculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalculationHistoryTableViewCell" id="CMe-Q4-3AR" customClass="CalculationHistoryTableViewCell" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMe-Q4-3AR" id="v1f-4c-cHs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -428,7 +427,7 @@
         <!--Playground View Controller-->
         <scene sceneID="kI5-cE-8zk">
             <objects>
-                <viewController id="dhI-IH-RCn" customClass="PlaygroundViewController" customModule="padc_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dhI-IH-RCn" customClass="PlaygroundViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OGc-Wm-cLh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

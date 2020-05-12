@@ -8,13 +8,7 @@
 
 import UIKit
 
-struct CalculationHistory {
-    var id : Int
-    var value : String
-    
-}
 
-var history = [CalculationHistory]()
 
 class CalculationHistoryViewController: UIViewController
     {
@@ -26,6 +20,7 @@ class CalculationHistoryViewController: UIViewController
 
         // Do any additional setup after loading the view.
         
+        self.view.accessibilityIdentifier = "CalculationHistoryViewController"
         tableView.dataSource = self
 //        tableView.delegate = self
         
