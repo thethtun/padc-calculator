@@ -15,7 +15,7 @@ struct CalculationHistoryView: View {
     var body: some View {
         List(calculations, id: \.id) { data in
             CalculationHistoryItemView(item: data) { (targetData) in
-                Repository.shared.removeHistory(id: targetData.id ?? "")
+                DatabaseManager().removeHistory(id: targetData.id ?? "")
             }
         }
         
@@ -25,6 +25,5 @@ struct CalculationHistoryView: View {
 struct CalculationHistoryView_Previews: PreviewProvider {
     static var previews: some View {
         CalculationHistoryView()
-            .environmentObject(Repository.shared)
     }
 }

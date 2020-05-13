@@ -11,11 +11,9 @@ import SwiftUI
 import Combine
 import CoreData
 
-class Repository : ObservableObject {
-    
-    static var shared = Repository()
-    
-    private init() {}
+
+//Abstract
+class DatabaseManager {
     
     func addNewHistory(data : String) {
         let context = CoreDataStack.shared.viewContext

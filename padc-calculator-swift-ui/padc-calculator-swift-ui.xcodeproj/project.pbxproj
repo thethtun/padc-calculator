@@ -16,7 +16,7 @@
 		5164B6E5246467DA008BE41F /* ButtonNumberPadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6E4246467DA008BE41F /* ButtonNumberPadItem.swift */; };
 		5164B6E7246495EF008BE41F /* TempLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164B6E6246495EF008BE41F /* TempLayout.swift */; };
 		51B36708246AECA3007F6E90 /* CalculationHistoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B36707246AECA3007F6E90 /* CalculationHistoryItemView.swift */; };
-		51B3670D246AF018007F6E90 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3670C246AF018007F6E90 /* Repository.swift */; };
+		51B3670D246AF018007F6E90 /* DatabaseManagerswift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3670C246AF018007F6E90 /* DatabaseManagerswift */; };
 		51F17044246C0C7D00652FED /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F17043246C0C7D00652FED /* CoreDataStack.swift */; };
 		51F6DA552464092000A1CD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F6DA542464092000A1CD40 /* AppDelegate.swift */; };
 		51F6DA572464092000A1CD40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F6DA562464092000A1CD40 /* SceneDelegate.swift */; };
@@ -57,7 +57,7 @@
 		5164B6E4246467DA008BE41F /* ButtonNumberPadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNumberPadItem.swift; sourceTree = "<group>"; };
 		5164B6E6246495EF008BE41F /* TempLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempLayout.swift; sourceTree = "<group>"; };
 		51B36707246AECA3007F6E90 /* CalculationHistoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHistoryItemView.swift; sourceTree = "<group>"; };
-		51B3670C246AF018007F6E90 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		51B3670C246AF018007F6E90 /* DatabaseManagerswift */ = {isa = PBXFileReference; lastKnownFileType = text; path = DatabaseManagerswift; sourceTree = "<group>"; };
 		51F17043246C0C7D00652FED /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		51F6DA512464092000A1CD40 /* padc-calculator-swift-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "padc-calculator-swift-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F6DA542464092000A1CD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		51B36709246AECC6007F6E90 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				51B3670C246AF018007F6E90 /* Repository.swift */,
+				51B3670C246AF018007F6E90 /* DatabaseManagerswift */,
 				51F17043246C0C7D00652FED /* CoreDataStack.swift */,
 			);
 			path = data;
@@ -340,7 +340,7 @@
 				515DAC94246AA419004AADA3 /* NavigationViewDemo.swift in Sources */,
 				51B36708246AECA3007F6E90 /* CalculationHistoryItemView.swift in Sources */,
 				51F6DA5C2464092000A1CD40 /* ContentView.swift in Sources */,
-				51B3670D246AF018007F6E90 /* Repository.swift in Sources */,
+				51B3670D246AF018007F6E90 /* DatabaseManagerswift in Sources */,
 				51F17044246C0C7D00652FED /* CoreDataStack.swift in Sources */,
 				5164B6E7246495EF008BE41F /* TempLayout.swift in Sources */,
 				515DAC96246AA76B004AADA3 /* CalculationHistoryView.swift in Sources */,
