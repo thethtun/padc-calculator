@@ -17,7 +17,7 @@ struct ContentView: View {
             }
             .navigationBarTitle("PADC Calculator", displayMode: .inline)
             .navigationBarItems(trailing: NavigationLink(
-                destination: CalculationHistoryView().environmentObject(Repository.shared),
+                destination: CalculationHistoryView(),
                 label: {
                     Image("icons8-clock_8-1")
             }))

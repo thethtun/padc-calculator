@@ -9,28 +9,43 @@
 import Foundation
 import SwiftUI
 import Combine
+import CoreData
 
 class Repository : ObservableObject {
-    
-    @Published var history = [CalculationHistory]() {
-        willSet {
-            willChange.send(self)
-        }
-    }
-    
-    let willChange = PassthroughSubject<Repository, Never>()
     
     static var shared = Repository()
     
     private init() {}
     
-    func addNewHistory(data : CalculationHistory) {
-        history.append(data)
+    func addNewHistory(data : String) {
+        let context = CoreDataStack.shared.viewContext
+        let entity = CalculationHistory(context: context)
+        entity.id = UUID().uuidString
+        entity.value = data
+        
+        do {
+            try context.save()
+        } catch {
+            print("failed to save")
+        }
     }
   
-    func removeHistory(data : CalculationHistory) {
-        history.removeAll { (source) -> Bool in
-            source.id == data.id
+    func removeHistory(id : String) {
+        let fetchRequest : NSFetchRequest<CalculationHistory> = CalculationHistory.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "id == %@", id)
+        
+        do {
+            let context = CoreDataStack.shared.viewContext
+            let results = try context.fetch(fetchRequest)
+            if !results.isEmpty {
+                results.forEach{ item in
+                    context.delete(item)
+                }
+                try? context.save()
+            }
+        } catch {
+            print("Failed to delete: \(error.localizedDescription)")
         }
+
     }
 }

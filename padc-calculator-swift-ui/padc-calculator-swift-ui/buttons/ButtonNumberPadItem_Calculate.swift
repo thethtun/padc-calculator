@@ -88,8 +88,8 @@ struct ButtonNumberPadItem_Calculate: View {
             //        let calculatedHistory = CalculationHistory(id : history.count + 1,value : labelresult.text ?? "")
             //        history.append(calculatedHistory)
             
-            let calculatedHistory = CalculationHistory(value: totalCalculation)
-            Repository.shared.addNewHistory(data: calculatedHistory)
+//            let calculatedHistory = CalculationHistory(value: totalCalculation)
+            Repository.shared.addNewHistory(data: totalCalculation)
             
             return totalCalculation
         } else {

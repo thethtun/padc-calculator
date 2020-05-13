@@ -20,7 +20,7 @@ struct CalculationHistoryItemView: View {
     
     var body: some View {
         HStack{
-            Text("Total Result : \(item.value)")
+            Text("Total Result : \(item.value ?? "")")
             Spacer()
             Button(action: {
             }) {
@@ -38,10 +38,10 @@ struct CalculationHistoryItemView: View {
     }
 }
 
-struct CalculationHistoryItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CalculationHistoryItemView(item: CalculationHistory(value: "10"),onClickDelete: { data in
-            
-        })
-    }
-}
+//struct CalculationHistoryItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CalculationHistoryItemView(item: CalculationHistory(value: "10"),onClickDelete: { data in
+//            
+//        })
+//    }
+//}

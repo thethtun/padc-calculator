@@ -10,12 +10,12 @@ import SwiftUI
 
 struct CalculationHistoryView: View {
     
-    @EnvironmentObject var repo : Repository
+    @FetchRequest(entity: CalculationHistory.entity(), sortDescriptors: [NSSortDescriptor(key: "created_at", ascending: false)]) var calculations : FetchedResults<CalculationHistory>
     
     var body: some View {
-        List(repo.history) { data in
+        List(calculations, id: \.id) { data in
             CalculationHistoryItemView(item: data) { (targetData) in
-                self.repo.removeHistory(data: targetData)
+                Repository.shared.removeHistory(id: targetData.id ?? "")
             }
         }
         
