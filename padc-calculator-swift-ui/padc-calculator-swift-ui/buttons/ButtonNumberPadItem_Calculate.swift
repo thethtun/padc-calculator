@@ -84,15 +84,19 @@ struct ButtonNumberPadItem_Calculate: View {
                 totalCalculation = "\(Double(round(1000*(num1 / num2))/1000))"
             }
 
+
+            //        let calculatedHistory = CalculationHistory(id : history.count + 1,value : labelresult.text ?? "")
+            //        history.append(calculatedHistory)
+            
+            let calculatedHistory = CalculationHistory(value: totalCalculation)
+            Repository.shared.addNewHistory(data: calculatedHistory)
+            
             return totalCalculation
         } else {
             return queryToCalculate
         }
 
         
-
-        //        let calculatedHistory = CalculationHistory(id : history.count + 1,value : labelresult.text ?? "")
-        //        history.append(calculatedHistory)
 
     }
     

@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+   
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            ZStack {
+                CalculatorView()
+            }
+            .navigationBarTitle("PADC Calculator", displayMode: .inline)
+            .navigationBarItems(trailing: NavigationLink(
+                destination: CalculationHistoryView().environmentObject(Repository.shared),
+                label: {
+                    Image("icons8-clock_8-1")
+            }))
+        }
     }
-    
-    /**
-     === Views ===
-     Button (Styling)
-      - Number
-      - Sign
-      - Action
-     Text (Styling)
-      - Calculation Result
-     Navigation - Items
-     */
 }
 
 struct ContentView_Previews: PreviewProvider {
