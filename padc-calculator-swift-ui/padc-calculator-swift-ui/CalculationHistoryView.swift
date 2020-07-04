@@ -14,6 +14,7 @@ struct CalculationHistoryView: View {
     
     var body: some View {
         List(calculations, id: \.id) { data in
+            
             CalculationHistoryItemView(item: data) { (targetData) in
                 DatabaseManager().removeHistory(id: targetData.id ?? "")
             }

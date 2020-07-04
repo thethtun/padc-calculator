@@ -29,7 +29,12 @@ class CalculationHistoryViewController: UIViewController
         tableView.dataSource = self
         view.accessibilityIdentifier = "CalculationHistoryViewController"
         
-//        tableView.delegate = self
+        let tableView = UITableView()
+        tableview.dataSource = self
+        tableview.delegate = self
+        let nib = UINib(nibName: String(describing: "TableView"), bundle: nil)
+        tableview.register(nib, forCellReuseIdentifier: "TableView")
+
         
     }
     
