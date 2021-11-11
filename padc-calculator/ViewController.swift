@@ -121,7 +121,11 @@ class ViewController: UIViewController {
         
     }
     
+    private var lastCalculationDisplayValue: String = ""
     func calculate(key : Operators, queryToCalculate : String) {
+        
+        lastCalculationDisplayValue = queryToCalculate
+        
         let numbers = queryToCalculate.split(separator: Character(key.rawValue) )
         var num1 : Int = 0
         var num2 : Int = 0
@@ -152,8 +156,12 @@ class ViewController: UIViewController {
             labelresult.text = "\(num1 / num2)"
         }
         
-        let calculatedHistory = CalculationHistory(id : history.count + 1,value : labelresult.text ?? "")
-        history.append(calculatedHistory)
+        let calculatedHistory = CalculationHistory(
+            id: history.count + 1,
+            value: labelresult.text ?? "",
+            source: lastCalculationDisplayValue
+        )
+        history.insert(calculatedHistory, at: 0)
         
     }
     

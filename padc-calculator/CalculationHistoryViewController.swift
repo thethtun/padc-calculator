@@ -11,7 +11,7 @@ import UIKit
 struct CalculationHistory {
     var id : Int
     var value : String
-    
+    var source: String
 }
 
 var history = [CalculationHistory]()
@@ -56,7 +56,7 @@ extension CalculationHistoryViewController : UITableViewDataSource {
         
         let calculationHistory = history[indexPath.row] //CalculationHistory
         let value = calculationHistory.value
-        cell.labelTotal.text = "Total \(value)"
+        cell.labelTotal.text = "\(calculationHistory.source) = \(value)"
         cell.object = calculationHistory
         cell.delegate = self
         return cell
